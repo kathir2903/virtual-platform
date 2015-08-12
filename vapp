@@ -1,0 +1,17 @@
+#!/usr/bin/python
+ 
+import sys
+import getconfig 
+ 
+def main():
+    sys.setdefaultencoding('utf-8')
+    cfg = getconfig.Config()
+    args = cfg.parseargs()
+    print args
+    out = args.get('ovfroot ')
+    #print dir(args)
+    print out
+
+if __name__ =='__main__':
+    main()
+                     
