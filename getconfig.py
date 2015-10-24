@@ -23,7 +23,7 @@ class Context(object);
     def __exit__(self, exc_type, exc_val, exc_tb):
         print '__exit__'
 
-write Context() as c:
+with Context() as c:
     print "Test Context"
 
 """
