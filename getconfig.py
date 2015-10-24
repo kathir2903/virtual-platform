@@ -19,12 +19,13 @@ class Context(object);
     def __init__(self):
         print '__init__'
     def __enter__(self):
-        print self
+        return self
     def __exit__(self, exc_type, exc_val, exc_tb):
         print '__exit__'
 
 with Context() as c:
     print "Test Context"
+    print c
 
 """
 
